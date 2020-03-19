@@ -42,18 +42,19 @@ async function init() {
         case 'PC':
             name = 'elementTemplate';
             reg = /^pc\-template.*$/;
-            // 注意private_token目前是绑定的 qianzhangsheng@hztianque.com
-            url = 'http://gitlab.hztianque.com/f3e/pc-template/repository/archive.zip?ref=master&private_token=ohk5Hbwkuz_jtxmVNsp2';
+            // url = 'http://gitlab.hztianque.com/f3e/pc-template/repository/archive.zip?ref=master&private_token=ohk5Hbwkuz_jtxmVNsp2';
+            url = 'https://github.com/colorFE/pc-template/archive/master.zip';
             break;
         case 'Mobile':
             name = 'mobile';
-            reg = /^mand\-template.*$/;
-            url = 'http://gitlab.hztianque.com/f3e/mand-template/repository/archive.zip?ref=master&private_token=ohk5Hbwkuz_jtxmVNsp2';
+            reg = /^mobile\-template.*$/;
+            // url = 'http://gitlab.hztianque.com/f3e/mobile-template/repository/archive.zip?ref=master&private_token=ohk5Hbwkuz_jtxmVNsp2';
+            url = 'https://github.com/colorFE/mobile-template/archive/master.zip';
             break;
         case '政法云模版':
             name = 'zfy';
             reg = /^zfy.*$/;
-            url = 'http://gitlab.hztianque.com/f3e/zfy/repository/archive.zip?ref=master&private_token=ohk5Hbwkuz_jtxmVNsp2';
+            url = 'http://gitlab.hztianque.com/f3e/zfy/repository/archive.zip?ref=template&private_token=ohk5Hbwkuz_jtxmVNsp2';
             break;
         case '大数据治理模板-iviwe案例':
             name = 'bigDataGovern';
@@ -78,7 +79,7 @@ async function init() {
     }
     const currentPath = path.join(absoluteCWD, dirname)
 
-    // TODO:fs-extra 8.1.0 moveSync 无法同文件夹操作
+    // FIXME: fs-extra 8.1.0 moveSync 无法同文件夹操作
     // fs.moveSync(currentPath, projectPath);
 
     // 方法一
