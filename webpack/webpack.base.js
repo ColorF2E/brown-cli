@@ -168,7 +168,7 @@ module.exports = function (config) {
                         parser: 'vue-eslint-parser',
                         parserOptions: {
                             parser: "babel-eslint",
-                            sourceType: 'module'
+                            sourceType: 'module',
                         },
                         env: ['browser'],
                         plugins: [

@@ -59,7 +59,8 @@ const webpackConfig = merge(baseWebpackConfig, {
                 removeComments: true,
                 removeAttributeQuotes: true
             },
-            chunksSortMode: 'dependency'
+            // html-webpack-plugin 4.0.4 弃用
+            // chunksSortMode: 'dependency'
         }),
 
         // webpack 4.x 弃用

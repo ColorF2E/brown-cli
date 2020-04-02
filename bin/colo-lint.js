@@ -21,7 +21,7 @@ const linter = new CLIEngine({
     parser: 'vue-eslint-parser',
     parserOptions: {
         parser: "babel-eslint",
-        sourceType: 'module'
+        sourceType: 'module',
     },
     cwd: process.cwd(),
     env: ['browser'],
